@@ -2,7 +2,8 @@
 	<head>
 		<title>K1 Church</title>
 		<link rel="stylesheet" type="text/css" href="css/Church_layout.css">
-		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 		<script src="js/Home_js.js" type = 'text/javaScript'></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -19,38 +20,48 @@
 		  <a href="#">Calendar</a>
 		</div>
 
+		<img src = "images/K1_logo_transparent.png" style = "width: 380px; height: 75px;"/>
 		<span onclick= "openNav()" id = "menu_nav">Menu</span>
-		<!--<div onclick= "openNav()" id = "dropbtn">
-				<span class = "span1"></span>
-				<span class = "span2"></span>
-				<span class = "span3"></span>
-		</div>
-		
-		<!--
-		<span class = "menu_nav">Menu</span>
-			<div onclick= "myFunction()" class = "dropbtn">
-				<span class = "span1"></span>
-				<span class = "span2"></span>
-				<span class = "span3"></span>
-			</div>
-			<div id = "myDropdown" class = "dropdown-content">
-				<div class= "nav-bar">
-				</div> 
-				<img src = "images/K1_logo.gif" class = "logo" style = "width: 64px; height: 64px;"/> 
-				<a class = "home" href = "">Home</a>
-				<a class = "about" href = "Church_About.html">About Us</a>
-				<a class = "experience" href = "Church_Staff.html">Our Staff</a>
-				<a class = "work" href = "">News</a>
-				<a class = "contact" href = "">Calendar</a>
-			</div> 
-		-->
 			
 		<div class = "K1_Logo" style = "text-align: center;">
-			<img src="images/K1_logo.gif" style = "width: 160px; height: 160px;"/>
-			<h1 style = "font-size: 60px; padding-bottom: 0px;">We are K1 Church</h1>
-			<h3>Kingsport, TN</h3>
+			<h1 style = "font-size: 110px; padding-bottom: 0px;">WE ARE</h1>
+			<h1 style = "font-size: 110px; padding-bottom: 0px;">K1 CHURCH</h1>
 			<div class = "page_options">
-				<a style = "padding: 10px; border:3px; border-style:solid; border-color:#0000; padding: 1em; color: white;" href = "Church_About.html">About Us</a>
+				<h3 style = "padding: 10px; border:1px; border-style:solid; border-color:#0000; padding: 1em; color: white;">JOIN US THIS SUNDAY AT 10AM</h3>
+				
+				<h4>Next Service Starts In:</h4>
+				<p id="demo"></p>
+				<script>
+				// Set the date we're counting down to
+							
+				var countDownDate = new Date("February 5, 2017 10:00:00").getTime();
+
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+
+				  // Get todays date and time
+				  var now = new Date().getTime();
+
+				  // Find the distance between now an the count down date
+				  var distance = countDownDate - now;
+
+				  // Time calculations for days, hours, minutes and seconds
+				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				  // Display the result in the element with id="demo"
+				  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+				  + minutes + "m " + seconds + "s ";
+
+				  // If the count down is finished, write some text 
+				  if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("demo").innerHTML = "EXPIRED";
+				  }
+				}, 1000);
+				</script>
 				<!-- <a style = "padding: 10px; border:3px; border-style:solid; border-color:#0000; padding: 1em;" href= "Church_Staff.html">Our Staff</a>
 				<a style = "padding: 10px; border:3px; border-style:solid; border-color:#0000; padding: 1em;">News</a>
 				<a style = "padding: 10px; border:3px; border-style:solid; border-color:#0000; padding: 1em;">Calendar</a> -->
