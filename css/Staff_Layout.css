@@ -1,14 +1,15 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Oswald', sans-serif;
 	letter-spacing: 1px;
 	font-weight:200;
+	background-color: #f2f2f2;
 }
 
 .header{
 	width: 100%;
-	height: 400px;
+	height: 600px;
 	text-align: center;
 	margin: 0px;
 	background-image: url(../images/K1_background.gif);
@@ -16,64 +17,104 @@ body{
 }
 
 .words{
-	position: absolute;
-	margin-top: 210px;
-	margin-bottom: 190px;
-	margin-left: 25%;
-	margin-right: 25%;
+	width: 1000px;
+	height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
 	color: white;
-	font-size: 20px;
+	top: 30%;
+	font-size: 45px;
 
 }
 
 .our_staff{
-	background-color: white;
-	margin-left: 200px;
-	margin-right: 200px;
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+	left: -15px;
+	padding-left: 15px;
+	padding-right: 15px;
 
 }
 
 .our_staff p{ 
 	padding: 5px;
+	color: #5e5e5e;
 	
 }
 
-.senior_pastor{
-	width: 1000px;
-    overflow: hidden;
-	padding: 40px;	
+.our_team{
+	text-align: center;
+	padding: 75px 25px 0px 0px;
+}
+
+.our_team h1{
+	font-size: 50px;
+	font-family: 'Signika Negative', sans-serif;
+	letter-spacing: 2px;
+	margin-bottom: 0px;
+	color: #404040;
+}
+
+.our_team p{
+	margin-top: 0px;
+	margin-right: 200px;
+	margin-left: 200px;
+}
+
+.team_block_content{
+	padding: 75px 0px;
+}
+
+.senior_pastor{	
+	margin: 75px 0px;
 }
 
 .senior_pastor img{
-	margin-right: 40px;
-	float: left;
+	float: right;
+	margin: 50px 50px;
+	padding: 10px;
+	background-color: fff;
 	
 }
 
+.senior_pastor_text{
+	width: 700px;
+}
+
 .worship_pastor{
-	width: 1000px;
-    overflow: hidden;
-	padding: 40px;
+	width: 100%;
+	height: 400px;
+    margin: 75px 0px;
 }
 
 .worship_pastor img{
-   margin-right: 40px;
-   float: left;	
+   margin: 50px 50px;
+   padding: 10px;
+	background-color: fff;
 }
 
 .worship_pastor_text{
-	margin-left: 40px;
+	width: 600px;
+	float: right;
 }
 
 .children_pastor{
-	width: 1000px;
-    overflow: hidden;
-	padding: 40px;
-}
+	width: 100%;
+	height: 400px;
+	margin: 75px 0px;
+ }
 
 .children_pastor img{
-	margin-right: 40px;
-    float: left;
+	margin: 50px 50px;
+    float: right;
+	padding: 10px;
+	background-color: fff;
+}
+
+.children_pastor_text{
+	width: 700px;
 }
 
 /*-----------------------------------------------
@@ -98,13 +139,13 @@ body{
 }
 
 .footer_text{
+	width: 1200px;
+	height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+	
 	display: block;
-	width: 75%;
-	height: 200px;
-	margin-right: -17px;
-	margin-left: -17px;
-	padding: 30px;
-	line-height: 2em;
 }
 
 .footer_text a{
@@ -135,7 +176,7 @@ body{
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
@@ -166,12 +207,6 @@ body{
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -180,9 +215,16 @@ body{
 
 #menu_nav{
     transition: margin-right .5s;
-	position: fixed;
-    padding: 20px;
-	color: fff;
-	float: left;
+	border: 2px solid #ffffff;
+    padding: 10px;
+	margin: 20px;
+	color: #fff;
+	float: right;
 	font-family: 'Roboto', sans-serif;
+}
+
+#menu_nav:hover{
+	color: #000000;
+	background-color: #ffffff;
+	
 }
