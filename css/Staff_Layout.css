@@ -12,12 +12,14 @@ html, body{
 
 .header{
 	width: 100%;
-
+	
 	height: 600px;
 	text-align: center;
 	margin: 0px;
-	background-image: url(../images/K1_background.gif);
+	background-image: url(../images/IMG_0574.jpg);
 	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .words{

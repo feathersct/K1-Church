@@ -1,0 +1,240 @@
+html, body{
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 1px;
+	font-weight:200;
+	background-color: #f2f2f2;
+}
+
+.header{
+	width: 100%;
+
+	height: 600px;
+	text-align: center;
+	margin: 0px;
+	background-image: url(../images/IMG_0669.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.words{
+	width: 1000px;
+	height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+	color: white;
+	top: 30%;
+	font-size: 45px;
+
+}
+
+/*-----------------------------------------------
+				Events Properties
+-------------------------------------------------*/
+
+.events_wrapper{
+	width: 1000px;
+	height: 300px;
+	margin: auto;
+	left: -15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*-------------------------------
+		Worship Encounter
+--------------------------------*/
+.worship_encounter{	
+	width: 100%;
+	height: 300px;
+	background-color: fff;
+	margin: 20px;
+	
+}
+
+.encounter_picture{
+	margin: 10px 10px;
+	padding: 10px;
+	background-color: fff;
+	max-width: 100%;
+	height: auto;
+	float: left;
+	
+}
+
+.encounter_text{
+	width: 65%;
+	float: left;
+}
+
+/*-------------------------------
+		All Aboard Event
+--------------------------------*/
+
+.all_aboard{	
+	width: 100%;
+	height: 300px;
+	background-color: fff;
+	margin: 20px;
+	
+}
+
+.all_aboard_picture{
+	margin: 10px 10px;
+	padding: 10px;
+	background-color: fff;
+	max-width: 100%;
+	height: auto;
+	float: left;
+	
+}
+
+.aboard_text{
+	width: 65%;
+	float: left;
+}
+
+
+/*-------------------------------
+		Ladies Night Out
+--------------------------------*/
+
+.ladies_night{	
+	width: 100%;
+	height: 300px;
+	background-color: fff;
+	margin: 20px;
+	
+}
+
+.ladies_night_picture{
+	margin: 10px 10px;
+	padding: 10px;
+	background-color: fff;
+	max-width: 100%;
+	height: auto;
+	float: left;
+	
+}
+
+.ladies_night_text{
+	width: 65%;
+	float: left;
+}
+
+/*-----------------------------------------------
+				Footer Properties
+-------------------------------------------------*/
+.footer{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 400px;
+	background-color: D8D8D8;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+		overflow-x: hidden;
+		overflow-y: hidden;
+}
+
+.footer_links{
+	padding: 20px;
+	
+}
+
+.footer_text{
+	width: 1200px;
+	height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+	
+	display: block;
+}
+
+.footer_text a{
+	color: black;
+	text-decoration: none;
+}
+
+/*
+	---------------------------------------------------------------
+
+
+
+
+						Side Menu Bar Pop Out
+	
+	
+	
+	
+	
+	
+	---------------------------------------------------------------
+*/
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#menu_nav{
+    transition: margin-right .5s;
+	border: 2px solid #ffffff;
+    padding: 10px;
+	margin: 20px;
+	color: #fff;
+	float: right;
+	font-family: 'Roboto', sans-serif;
+}
+
+#menu_nav:hover{
+	color: #000000;
+	background-color: #ffffff;
+	
+}
