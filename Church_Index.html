@@ -20,57 +20,159 @@
 		  <a href="#">Calendar</a>
 		</div>
 
-		<img src = "images/K1_logo_transparent.png" style = "width: 253px; height: 50px; margin: 20px;"/>
-		<a onclick= "openNav()" id = "menu_nav">Menu</a>
-			
-		<div class = "K1_Logo" style = "text-align: center;">
-			<h1 style = "font-size: 110px; padding-bottom: 0px;">WE ARE</h1>
-			<h1 style = "font-size: 110px; padding-bottom: 0px;">K1 CHURCH</h1>
-			<div class = "page_options">
-				<h3 style = "padding: 10px; border:1px; border-style:solid; border-color:#0000; padding: 1em; color: white;">JOIN US THIS SUNDAY AT 10AM</h3>
+		
+		
+		<div class= "title_page">
+			<div class = "header">
+				<img src = "images/K1_logo_transparent.png" style = "width: 253px; height: 50px; margin: 20px;"/>
+				<a onclick= "openNav()" id = "menu_nav" style= "float: right;">Menu</a>
+			</div>
+			<div class = "K1_Logo" style = "text-align: center;">
+				<h1 style = "font-size: 110px; padding-bottom: 0px;">WE ARE</h1>
+				<h1 style = "font-size: 110px; padding-bottom: 0px;">K1 CHURCH</h1>
+				<div class = "page_options">
+					<h3 style = "padding: 10px; border:1px; border-style:solid; border-color:#0000; padding: 1em; color: white;">JOIN US THIS SUNDAY AT 10AM</h3>
+					
+					<h4>Next Service Starts In:</h4>
+					<p id="demo"></p>
+					<script>
+					// Set the date we're counting down to
+								
+					var countDownDate = new Date("February 12, 2017 10:00:00").getTime();
+
+					// Update the count down every 1 second
+					var x = setInterval(function() {
+
+					  // Get todays date and time
+					  var now = new Date().getTime();
+
+					  // Find the distance between now an the count down date
+					  var distance = countDownDate - now;
+
+					  // Time calculations for days, hours, minutes and seconds
+					  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					  // Display the result in the element with id="demo"
+					  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+					  + minutes + "m " + seconds + "s ";
+
+					  // If the count down is finished, write some text 
+					  if (distance < 0) {
+						clearInterval(x);
+						document.getElementById("demo").innerHTML = "EXPIRED";
+					  }
+					}, 1000);
+					</script>
+					<!-- <a style = "padding: 10px; border:3px; border-style:solid; border-color:#0000; padding: 1em;" href= "Church_Staff.html">Our Staff</a>
+					<a style = "padding: 10px; border:3px; border-style:solid; border-color:#0000; padding: 1em;">News</a>
+					<a style = "padding: 10px; border:3px; border-style:solid; border-color:#0000; padding: 1em;">Calendar</a> -->
+				</div>
+			</div>
+		</div>
+		
+		<div class= "inner_content">
+			<div class= "content_text">
+				<div class= "block_text">
+					<h2>Current Service Times</h2>
+					<h3>Sunday - 9:00 & 10:00AM</h3>
+				</div>
 				
-				<h4>Next Service Starts In:</h4>
-				<p id="demo"></p>
-				<script>
-				// Set the date we're counting down to
-							
-				var countDownDate = new Date("February 12, 2017 10:00:00").getTime();
-
-				// Update the count down every 1 second
-				var x = setInterval(function() {
-
-				  // Get todays date and time
-				  var now = new Date().getTime();
-
-				  // Find the distance between now an the count down date
-				  var distance = countDownDate - now;
-
-				  // Time calculations for days, hours, minutes and seconds
-				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-				  // Display the result in the element with id="demo"
-				  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-				  + minutes + "m " + seconds + "s ";
-
-				  // If the count down is finished, write some text 
-				  if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("demo").innerHTML = "EXPIRED";
-				  }
-				}, 1000);
-				</script>
-				<!-- <a style = "padding: 10px; border:3px; border-style:solid; border-color:#0000; padding: 1em;" href= "Church_Staff.html">Our Staff</a>
-				<a style = "padding: 10px; border:3px; border-style:solid; border-color:#0000; padding: 1em;">News</a>
-				<a style = "padding: 10px; border:3px; border-style:solid; border-color:#0000; padding: 1em;">Calendar</a> -->
+				<hr/>
+				
+				<div class= "block_text">
+					<h2>Location</h2>
+					<h3>2213 Brandon Lane, Kingsport, TN 37660</h3>
+				</div>
+				
+				<hr/>
+				
+				<div class= "block_text">
+					<h2>Contact Us</h2>
+					<h3>robin@kingsportfirst.com | <a href="">Contact Form</a></h3>
+					<h3>423-247-1169</h3>
+				</div>
+			</div>
+		
+		</div>
+	
+		<div class= "our_mission">
+			<div class= "mission_text">
+				<h1>Our Mission</h1>
+				<h2 style = "padding: 10px; border:1px; border-style:solid; border-color:#0000; padding: 1em; color: white;">Learn | Grow | Serve</h2>
 			</div>
 		</div>
 	
-	
-
-	
+		<div class= "inner_content">
+			<div class= "content_text">
+				<h3>At Kingsport First we have a passion for you learn and experience God's redeeming love, grow in community with others and serve your neighbors.</h3>
+				<br/>
+				<h4>Our mission is simple, we want you to learn, grow, and serve.</h4>
+			</div>
+			<hr/>
+			<div class= "row_block">
+				<div class= "row_text">
+					<h2>Learn</h2>
+					<h4>Attend and participate in service on Sunday morning.</h4>
+				</div>
+				
+				<div class= "row_text">
+					<h2>Grow</h2>
+					<h4>Connect and get involved in a local growth group.</h4>
+				</div>
+				
+				<div class= "row_text">
+					<h2>Serve</h2>
+					<h4>Use your gifts to give back to the church and your community.</h4>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "footer">
+			<div class = "footer_links">
+				<a href = "https://www.facebook.com/kingsportfirst/"><img src = "images/facebook_icon.svg" style = "width: 50px; height: 50px;"/></a>
+				<a href = "https://twitter.com/kingsportfirst"><img src = "images/twitter_icon.svg" style = "width: 50px; height: 50px;"/></a>
+				<a href = "https://www.instagram.com/k1church/?hl=en"><img src = "images/instagram_icon.svg" style = "width: 50px; height: 50px;"/></a>
+				<a href = "https://www.youtube.com/channel/UCqS04vKgSwkrCBL4GyZP2EQ"><img src = "images/youtube_icon.png" style = "width: 50px; height: 50px;"/></a>
+			</div>
+			
+			<div class = "footer_text">
+				<div class = "footer_info" style = "width: 175px; float:left;">
+					<p><b>Kingsport First Assembly</b></p>
+					<p>2213 Brandon Lane</p>
+					<p>Kingsport, TN 37660</p>
+					<p>Phone: 423-247-1169</p>
+					<p>  Fax: 423-245-4219</p>
+				</div>
+				
+				<div class = "footer_about" style = "width: 175px; float:left;">
+					<p><b>About</b></p>
+					<br/>
+					<a href = ""><p>Our Church</p></a>
+					<a href = ""><p>Our Staff</p></a>
+					<a href = ""><p>Our Beliefs</p></a>
+				</div>
+				
+				<div class = "footer_connect" style = "width: 175px; float:left;">
+					<p><b>Connect</b></p>
+					<br/>
+					<a href = ""><p>Life Groups</p></a>
+					<a href = ""><p>Contact</p></a>
+					<a href = ""><p>Volunteer</p></a>
+					<a href = ""><p>Events</p></a>
+				</div>
+				
+				<div class = "footer_times" style = "width: 175px; float:left; ">
+					<p><b>Services</b></p>
+					<br/>
+					<p>Sunday School 9:00am</p>
+					<p>Worship Service 10:00am</p>
+					<p>Wednesday Night 7:00pm</p>
+				</div>
+			</div>
+		</div>
 	
 	</body>
 

@@ -1,11 +1,3 @@
-html { 
-  background: url(../images/IMG_0583.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 body{
 	margin: 0;
 	padding: 0;
@@ -14,6 +6,31 @@ body{
 	color: white;
 	
 	
+}
+
+hr{
+	width: 600px;
+}
+
+/*-------------------------------
+		Title Page
+---------------------------------*/
+
+
+.title_page{
+	width: 100%;
+	height: 100%;
+	background: url(../images/IMG_0583.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+.header{
+	position: fixed;
+	width: 100%;
 }
 
 .K1_Logo{
@@ -67,6 +84,86 @@ body{
 	background-color: #ffffff;
 	
 }
+
+/*-------------------------------
+		Inner Content
+---------------------------------*/
+.inner_content{
+	padding: 50px auto;
+	width: 100%;
+	height: 675px;
+	color: #000000;
+	text-align: center;
+}
+
+.content_text{
+	padding: 40px;
+}
+
+.block_text{
+	padding: 25px;
+}
+
+
+
+/*-------------------------------
+		Our Mission
+---------------------------------*/
+.our_mission{
+	width: 100%;
+	height: 600px;
+	padding: 70px 30px;
+	background: url(../images/IMG_0607.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.mission_text h1{
+	font-size: 80px;
+	margin: 10px;
+}
+
+.mission_text h2{
+	font-size: 40px;
+	margin: 20px auto;
+	padding: 15px 20px;
+	width: 400px;
+}
+
+.mission_text{
+	position: relative;
+	margin: 90px;
+	text-align: center;
+	padding: 30px;
+}
+
+
+/*-------------------------------
+		Inner Content2
+---------------------------------*/
+.content_text{
+	display: inline-table;
+	width: 50%;
+	height: auto;
+}
+
+.row_block{
+	display: inline-table;
+	width:55%;
+	height: 200px;
+}
+
+.row_text{
+	width: 250px;
+	height: 160px;
+	float: left;
+	margin: 40px;
+}
+
+
+
 
 
 /*
@@ -133,4 +230,38 @@ body{
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+
+/*-----------------------------------------------
+				Footer Properties
+-------------------------------------------------*/
+.footer{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 400px;
+	background-color:#5287f9;
+	display: inline-table;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+}
+
+.footer_links{
+	padding: 20px;
+	
+}
+
+.footer_text{
+	width: 800px;
+	height: 300px;
+    padding: 10px;
+	
+	display: inline-table;
+}
+
+.footer_text a{
+	color: black;
+	text-decoration: none;
 }
